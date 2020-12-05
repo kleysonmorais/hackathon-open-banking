@@ -14,7 +14,7 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
 export default function PerfilPage() {
   return (
     <>
-      <DynamicAppTabNavigationWithNoSSR title="Perfil" />
+      <DynamicAppTabNavigationWithNoSSR title="Mais opções" />
 
       <img src="../imgs/Group-109.png" alt="foto" />
       <img src="../imgs/Group-110.png" alt="foto" />
