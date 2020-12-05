@@ -17,11 +17,11 @@ export default function Home() {
 
   const logar = () => {
     setErroEmail(false);
-    if (email === 'kleysonmorais' && senha === 'admin') {
+    if (email === 'kleysonmorais' && senha !== '') {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-        router.push('/formularios');
+        router.push('/principal');
       }, 2000);
     } else {
       setErroEmail(true);

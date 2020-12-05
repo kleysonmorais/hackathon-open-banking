@@ -11,6 +11,11 @@ import NotListedLocationOutlinedIcon from '@material-ui/icons/NotListedLocationO
 import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import ListOutlinedIcon from '@material-ui/icons/ListOutlined';
+import OutlinedFlagRoundedIcon from '@material-ui/icons/OutlinedFlagRounded';
+import MoreHorizOutlinedIcon from '@material-ui/icons/MoreHorizOutlined';
+
 const useStyles = makeStyles({
   root: {
     width: '100%',
@@ -21,38 +26,15 @@ const useStyles = makeStyles({
 export default function LabelBottomNavigation({ selected }) {
   const classes = useStyles();
   const [value, setValue] = React.useState(selected);
-  const [internetColor, setInternetColor] = useState('#B53232');
-  const [internetStatus, setInternetStatus] = useState(
-    'Desconectado da internet: Salvando dados localmente'
-  );
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
     Router.push(`/${newValue}`);
   };
 
-  const changeInternetStatus = () => {
-    setInternetColor('#4B78BA');
-    setInternetStatus('Sincronizando dados com a base CNT ...');
-  };
-
-  setTimeout(() => {
-    changeInternetStatus();
-  }, 10000);
-
   return (
     <div className="block lg:hidden">
       <Toolbar />
-      <div
-        className="flex justify-center text-white w-full"
-        style={{
-          position: 'fixed',
-          bottom: '55px',
-          backgroundColor: internetColor,
-        }}
-      >
-        {internetStatus}
-      </div>
       <BottomNavigation
         style={{ position: 'fixed', bottom: 0 }}
         value={value}
@@ -62,27 +44,27 @@ export default function LabelBottomNavigation({ selected }) {
       >
         <BottomNavigationAction
           style={{ color: 'white' }}
-          label="Formularios"
-          value="formularios"
-          icon={<FormatListBulletedIcon />}
+          label="Principal"
+          value="principal"
+          icon={<HomeOutlinedIcon />}
         />
         <BottomNavigationAction
           style={{ color: 'white' }}
-          label="Dúvidas"
-          value="duvidas"
-          icon={<NotListedLocationOutlinedIcon />}
+          label="Transações"
+          value="transacoes"
+          icon={<ListOutlinedIcon />}
         />
         <BottomNavigationAction
           style={{ color: 'white' }}
-          label="Chat"
-          value="chat"
-          icon={<ChatOutlinedIcon />}
+          label="Planejamento"
+          value="planejamento"
+          icon={<OutlinedFlagRoundedIcon />}
         />
         <BottomNavigationAction
           style={{ color: 'white' }}
-          label="Perfil"
-          value="perfil"
-          icon={<PersonOutlineOutlinedIcon />}
+          label="Mais"
+          value="mais"
+          icon={<MoreHorizOutlinedIcon />}
         />
       </BottomNavigation>
     </div>
