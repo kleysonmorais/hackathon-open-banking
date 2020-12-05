@@ -1,70 +1,10 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { ScrollingContainers } from 'app/UI/components/scrolling-containers';
 import { CategoryCardItem } from 'app/UI/components/category-card-item';
-import { BannerCardItem } from 'app/UI/components/banner-card-item';
-import { FormCardItem } from 'app/UI/components/form-card-item';
-import { GridTemplate } from 'app/UI/components/grid-template';
+import Typography from '@material-ui/core/Typography';
 
 import ArrowUpwardOutlinedIcon from '@material-ui/icons/ArrowUpwardOutlined';
 import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
-
-const DynamicAppTabNavigationWithNoSSR = dynamic(
-  () => import('app/UI/components/app-tab'),
-  { ssr: false }
-);
-
-const DynamicLabelBottomNavigationWithNoSSR = dynamic(
-  () => import('app/UI/components/label-bottom-navigation'),
-  { ssr: false }
-);
-
-const formularios = [
-  {
-    trecho: 1,
-    id: '45841',
-    rota: 6,
-    data: '21/10/2020',
-    br: 'BR-157',
-    km: 40,
-    status: 'Completo',
-    corStatus: '#268E24',
-    color: '#fff',
-  },
-  {
-    trecho: 6,
-    id: '56234',
-    rota: 6,
-    data: '24/10/2020',
-    br: 'BR-157',
-    km: 20,
-    status: 'Pendências',
-    corStatus: '#E07B04',
-    color: '#fff',
-  },
-  {
-    trecho: 8,
-    id: '78569',
-    rota: 6,
-    data: '25/10/2020',
-    br: 'BR-157',
-    km: 40,
-    status: 'Em progresso',
-    corStatus: '#CAB923',
-    color: '#fff',
-  },
-  {
-    trecho: 10,
-    id: '85963',
-    rota: 6,
-    data: '25/10/2020',
-    br: 'BR-157',
-    km: 30,
-    status: 'Para fazer',
-    corStatus: '#fff',
-    color: '#686868',
-  },
-];
 
 export default function FormulariosPage() {
   return (
@@ -91,7 +31,10 @@ export default function FormulariosPage() {
                 alt="nubank"
               />
               <div className="px-2">
-                <p className="font-sm text-base font-bold">Nubank</p>
+                <Typography variant="h5" component="h2">
+                  Nubank
+                </Typography>
+                {/* <p className="font-sm text-base font-bold">Nubank</p> */}
                 <span className="font-sans text-base font-semibold text-green-800">
                   R$ 1.254,32
                 </span>
@@ -108,7 +51,10 @@ export default function FormulariosPage() {
                 alt="nubank"
               />
               <div className="px-2">
-                <p className="font-sm text-base font-bold">Itaú</p>
+                {/* <p className="font-sm text-base font-bold">Itaú</p> */}
+                <Typography variant="h5" component="h2">
+                  Itaú
+                </Typography>
                 <span className="font-sans text-base font-semibold text-green-800">
                   R$ 2.004,11
                 </span>
@@ -126,7 +72,9 @@ export default function FormulariosPage() {
                 alt="nubank"
               />
               <div className="px-2">
-                <p className="font-sm text-base font-bold">Caixa</p>
+                <Typography variant="h5" component="h2">
+                  Caixa
+                </Typography>
                 <span className="font-sans text-base font-semibold text-green-800">
                   R$ 101,01
                 </span>
@@ -160,12 +108,22 @@ export default function FormulariosPage() {
           </div>
 
           <ScrollingContainers>
-            <CategoryCardItem content="Minhas despesas" />
-            <CategoryCardItem content="Objetivos" />
-            <CategoryCardItem content="Investimentos" />
-            <CategoryCardItem content="Perfil de investidor" />
-            <CategoryCardItem content="Ajustar Planos" />
-            <CategoryCardItem content="Me ajuda" />
+            <CategoryCardItem
+              content="Gestão de Consentimento"
+              page="gestao-de-consentimento"
+            />
+            <CategoryCardItem
+              content="Minhas despesas"
+              page="minhas-despesas"
+            />
+            <CategoryCardItem content="Objetivos" page="objetivos" />
+            <CategoryCardItem content="Investimentos" page="investimentos" />
+            <CategoryCardItem
+              content="Perfil de investidor"
+              page="perfil-de-investidor"
+            />
+            <CategoryCardItem content="Ajustar Planos" page="ajustar-planos" />
+            <CategoryCardItem content="Me ajuda" page="me-ajuda" />
           </ScrollingContainers>
         </div>
       </div>
