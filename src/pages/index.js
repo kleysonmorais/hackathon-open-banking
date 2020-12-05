@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>App CNT</title>
+        <title>Meu Gerente</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -43,10 +43,10 @@ export default function Home() {
       )}
       <main className={styles.main}>
         <div className="flex items-center flex-col">
-          <label className="font-bold text-2xl" style={{ color: '#10386c' }}>
+          <p className="font-bold text-2xl" style={{ color: 'white' }}>
             Pesquisa
-          </label>
-          <img src="../imgs/logoCNT.png" />
+          </p>
+          <img src="../imgs/logoCNT.png" alt="logo" />
         </div>
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white p-10">
           <TextField
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="flex flex-col items-center my-16 w-full">
           <button
             className="my-5 bg-white font-bold py-2 px-4 rounded w-3/4"
-            style={{ color: '#10386C' }}
+            style={{ color: '#499FA4' }}
             onClick={() => logar()}
           >
             Entrar

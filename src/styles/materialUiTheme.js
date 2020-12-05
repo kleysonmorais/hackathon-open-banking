@@ -1,13 +1,13 @@
 // Theme material-ui
-import { createMuiTheme } from "@material-ui/core";
+import { createMuiTheme } from '@material-ui/core';
 
-const primary = "#10386C";
+const primary = '#499FA4';
 
 export const theme = createMuiTheme({
   palette: {
     primary: {
       main: primary,
-      contrastText: "#fff",
+      contrastText: '#fff',
     },
   },
   overrides: {
@@ -36,7 +36,12 @@ export const theme = createMuiTheme({
     },
     MuiInputLabel: {
       formControl: {
-        width: "max-content",
+        width: 'max-content',
+      },
+    },
+    MuiInputBase: {
+      root: {
+        color: primary,
       },
     },
   },

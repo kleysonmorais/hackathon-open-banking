@@ -14,7 +14,7 @@ import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined'
 const useStyles = makeStyles({
   root: {
     width: '100%',
-    backgroundColor: '#10386C',
+    backgroundColor: '#499FA4',
   },
 });
 

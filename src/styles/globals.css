@@ -19,19 +19,18 @@ a {
   width: 100%;
 
   background-image: url("../../public/imgs/backgroundLogin.png");
-  background-size: 100% 40%;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  opacity: 10%;
 }
 
 .loading {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   font-size: 140px;
-  background-color: rgba(0, 0, 0, 0.5);;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   position: absolute;
