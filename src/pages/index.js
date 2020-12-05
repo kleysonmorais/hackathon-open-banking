@@ -11,21 +11,16 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const [erroEmail, setErroEmail] = useState(false);
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 
   const logar = () => {
-    setErroEmail(false);
-    if (email === 'kleysonmorais' && senha !== '') {
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-        router.push('/principal');
-      }, 2000);
-    } else {
-      setErroEmail(true);
-    }
+    localStorage.setItem('clientId', email);
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      router.push('/principal');
+    }, 2000);
   };
 
   return (
@@ -89,7 +84,7 @@ export default function Home() {
         <div className="flex flex-col items-center my-16 w-full">
           <button
             className="my-5 bg-white font-bold py-2 px-4 rounded w-3/4"
-            style={{ color: '#499FA4' }}
+            style={{ color: '#ff574eff' }}
             onClick={() => logar()}
           >
             Entrar

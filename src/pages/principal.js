@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import React, { useEffect } from 'react';
+import dynamic from 'next/dynamic';
+>>>>>>> implementar-api
 import { ScrollingContainers } from 'app/UI/components/scrolling-containers';
 import { CategoryCardItem } from 'app/UI/components/category-card-item';
 import Typography from '@material-ui/core/Typography';
@@ -9,7 +14,7 @@ import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceW
 export default function FormulariosPage() {
   return (
     <>
-      <div className="h-screen" style={{ backgroundColor: '#499FA4' }}>
+      <div className="h-screen" style={{ backgroundColor: '#ff574eff' }}>
         <div className="text-center">
           <h2 className="leading-tight font-sans text-base px-24 text-center pt-4 text-white">
             Kleyson, seu <br />
