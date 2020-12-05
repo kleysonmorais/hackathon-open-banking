@@ -8,19 +8,12 @@ const DynamicAppTabNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-const DynamicLabelBottomNavigationWithNoSSR = dynamic(
-  () => import('app/UI/components/label-bottom-navigation'),
-  { ssr: false }
-);
-
 export default function DuvidasPage() {
   return (
     <>
       <DynamicAppTabNavigationWithNoSSR title="callback" />
 
       <div className="container mx-auto my-4">Tela de Callback</div>
-
-      <DynamicLabelBottomNavigationWithNoSSR selected="callback" />
     </>
   );
 }

@@ -12,4 +12,8 @@ const apiObieBank = axios.create({
   baseURL: 'https://developer-api.obiebank.banfico.com/api',
 });
 
-export { apiBase, apiAccessAuth, apiObieBank };
+const apiAggregator = axios.create({
+  baseURL: 'https://aggregator-api.obaf.banfico.com/api/providers',
+});
+
+export { apiBase, apiAccessAuth, apiObieBank, apiAggregator };
