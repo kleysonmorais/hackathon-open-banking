@@ -18,22 +18,7 @@ export default function ParaVocePage() {
     <>
       <DynamicAppTabNavigationWithNoSSR title="Para você" return="/principal" />
 
-      <div className="container mx-auto my-4">
-        {/* <h2 className="text-xl font-medium mx-2">Categorias populares</h2>
-
-        <GridTemplate mobileCols={2} desktopCols={4}>
-          <CategoryCardItem type="toSearch" />
-          <CategoryCardItem type="toSearch" />
-          <CategoryCardItem type="toSearch" />
-          <CategoryCardItem type="toSearch" />
-          <CategoryCardItem type="toSearch" />
-          <CategoryCardItem type="toSearch" />
-        </GridTemplate> */}
-
-        <GridTemplate>{/* <DiscountCardItem /> */}</GridTemplate>
-      </div>
-
-      <DynamicLabelBottomNavigationWithNoSSR selected="busca" />
+      <img src="imgs/invest-2.svg" className="py-4 px-8 w-full" alt="foto" />
     </>
   );
 }

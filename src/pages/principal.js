@@ -63,7 +63,7 @@ const cards = [
     about: 'Seu plano inteligente',
   },
   {
-    about: 'Investimentos',
+    about: 'Recomendações',
     content: 'Para você',
     page: 'para-voce',
   },
