@@ -84,7 +84,7 @@ export default function Home() {
         <div className="flex flex-col items-center my-16 w-full">
           <button
             className="my-5 bg-white font-bold py-2 px-4 rounded w-3/4"
-            style={{ color: '#ff574eff' }}
+            style={{ color: '#B02334' }}
             onClick={() => logar()}
           >
             Entrar

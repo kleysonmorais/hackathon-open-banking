@@ -1,7 +1,7 @@
 // Theme material-ui
 import { createMuiTheme } from '@material-ui/core';
 
-const primary = '#ff574eff';
+const primary = '#B02334';
 
 export const theme = createMuiTheme({
   palette: {

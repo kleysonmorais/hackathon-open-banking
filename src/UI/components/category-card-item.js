@@ -23,23 +23,21 @@ const useStyles = makeStyles({
   },
 });
 
-export function CategoryCardItem({ content, page }) {
+export function CategoryCardItem({ content, page, about }) {
   const classes = useStyles();
   return (
     <Link href={'/' + page}>
       <div className="card m-2">
         <Card className={classes.root}>
-          <CardContent>
+          <CardContent className="">
             <Typography
               className={classes.title}
               color="textSecondary"
               gutterBottom
             >
-              Word of the Day
+              {about}
             </Typography>
-            <Typography variant="h5" component="h2">
-              {content}
-            </Typography>
+            <Typography variant="h6">{content}</Typography>
           </CardContent>
           {/* <CardActions>
           <Button size="small">Learn More</Button>

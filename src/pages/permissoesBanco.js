@@ -57,7 +57,7 @@ export default function PermissoesBanco() {
         <button
           type="button"
           className="place-self-center my-5 bg-white font-bold py-2 px-4 rounded w-3/4"
-          style={{ color: '#ff574eff' }}
+          style={{ color: '#B02334' }}
           onClick={() => handleNovoBanco()}
         >
           Novo Banco

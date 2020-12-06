@@ -19,7 +19,7 @@ import MoreHorizOutlinedIcon from '@material-ui/icons/MoreHorizOutlined';
 const useStyles = makeStyles({
   root: {
     width: '100%',
-    backgroundColor: '#ff574eff',
+    backgroundColor: '#B02334',
   },
 });
 
