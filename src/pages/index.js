@@ -38,10 +38,7 @@ export default function Home() {
       )}
       <main className={styles.main}>
         <div className="flex items-center flex-col">
-          <p className="font-bold text-2xl" style={{ color: 'white' }}>
-            Pesquisa
-          </p>
-          <img src="../imgs/logoCNT.png" alt="logo" />
+          <img height="130px" width="200px" src="../imgs/logo.png" alt="logo" />
         </div>
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white p-10">
           <TextField
@@ -83,6 +80,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center my-16 w-full">
           <button
+            type="button"
             className="my-5 bg-white font-bold py-2 px-4 rounded w-3/4"
             style={{ color: '#B02334' }}
             onClick={() => logar()}
@@ -90,7 +88,11 @@ export default function Home() {
             Entrar
           </button>
 
-          <button className="my-5 bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded w-3/4">
+          <button
+            type="button"
+            className="my-5 bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded w-3/4"
+            style={{ backgroundColor: '#B02334' }}
+          >
             Esqueci a senha
           </button>
         </div>
