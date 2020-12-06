@@ -6,13 +6,10 @@ const DynamicAppTabNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-export default function MinhasDepesasPage() {
+export default function AjudaPage() {
   return (
     <>
-      <DynamicAppTabNavigationWithNoSSR
-        title="Perfil do Investidor"
-        return="/principal"
-      />
+      <DynamicAppTabNavigationWithNoSSR title="Ajuda" return="/principal" />
 
       {/* <img src="../imgs/foto1.png" alt="foto" />
       <img src="../imgs/foto2-2.png" alt="foto" />

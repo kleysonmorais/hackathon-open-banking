@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import dynamic from 'next/dynamic';
 import { ScrollingContainers } from 'app/UI/components/scrolling-containers';
 import { CategoryCardItem } from 'app/UI/components/category-card-item';
 // import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
 
 const DynamicAppTabNavigationWithNoSSR = dynamic(
   () => import('app/UI/components/app-tab'),
@@ -45,34 +43,42 @@ const accountsBank = [
 
 const cards = [
   {
-    content: 'Gestão de consentimento',
-    page: 'gestao-de-consentimento',
-    about: 'Configurar permissões',
+    content: 'Permissões',
+    page: 'permissoes',
+    about: 'Uso de dados',
   },
   {
-    content: 'Minhas despesas',
-    page: 'minhas-despesas',
-    about: 'Resumo',
+    content: 'Moderado',
+    page: 'perfil-de-investidor',
+    about: 'Perfil do investidor',
   },
   {
     content: 'Objetivos',
     page: 'objetivos',
-    about: 'Defina metas',
+    about: 'Suas metas',
   },
-  { content: 'Investimentos', page: 'investimentos', about: 'Resumo' },
   {
-    about: 'Moderado',
-    content: 'Perfil de investidor',
-    page: 'perfil-de-investidor',
+    content: 'Poupe seu dinheiro',
+    page: 'planejamento',
+    about: 'Seu plano inteligente',
   },
-  { content: 'Ajustar Planos', page: 'ajustar-planos', about: 'Premium' },
-  { content: 'Me ajuda', page: 'me-ajuda', about: 'Dúvidas' },
+  {
+    about: 'Investimentos',
+    content: 'Para você',
+    page: 'para-voce',
+  },
+  {
+    content: 'Meus investimentos',
+    page: 'meus-investimentos',
+    about: 'Entenda',
+  },
+  { content: 'Me ajuda', page: 'ajuda', about: 'Suporte' },
 ];
 export default function FormulariosPage() {
   const classes = useStyles();
   return (
     <>
-      <DynamicAppTabNavigationWithNoSSR title="Olá, Kleyson" />
+      <DynamicAppTabNavigationWithNoSSR title="Meu Gerente" />
 
       <div style={{ backgroundColor: '#B02334' }}>
         <ScrollingContainers>
@@ -89,31 +95,27 @@ export default function FormulariosPage() {
 
       <div className="h-screen bg-gray-100">
         <Card className={classes.root} variant="outlined">
-          <CardContent className="my-2">
-            <div className="flex justify-start">
-              <img
-                width={100}
-                // style={{ borderRadius: 5 }}
-                src="imgs/undraw_wallet.svg"
-                alt="nubank"
-              />
-              <div className="text-center">
-                <h2 className="leading-tight font-sans text-base px-12 text-center pt-4">
-                  Kleyson, seu <br />
-                  patrimônio hoje: <br />
-                </h2>
-                <p
-                  className="font-semibold p-2 text-lg"
-                  style={{ color: '#4B7594' }}
-                >
-                  R$15.450,00
-                </p>
-              </div>
-            </div>
+          <CardContent className="my-2 flex justify-between w-full">
+            <h2 className="font-medium font-sans text-base text-left">
+              Kleyson, seu <br />
+              patrimônio hoje: <br />
+            </h2>
+            <p
+              className="font-semibold text-base text-right"
+              style={{ color: '#4B7594' }}
+            >
+              R$1.450,00 <br />{' '}
+              <span className="font-semibold text-sm underline">
+                meus investimentos
+              </span>
+            </p>
           </CardContent>
         </Card>
 
-        {accountsBank.map((accounts, index) => (
+        <img src="imgs/home-1.svg" className="py-8 px-12 w-full" alt="foto" />
+        <img src="imgs/home-2.svg" className="py-4 px-8 w-full" alt="foto" />
+
+        {/* {accountsBank.map((accounts, index) => (
           <div key={index.toString()} className="m-2">
             <Card className={classes.root} variant="outlined">
               <CardContent className="my-2">
@@ -129,7 +131,6 @@ export default function FormulariosPage() {
                     <Typography variant="h5" component="h2">
                       {accounts.name}
                     </Typography>
-                    {/* <p className="font-sm text-base font-bold">Nubank</p> */}
                     <span className="font-sans text-base font-semibold text-green-800">
                       R$ {accounts.value}
                     </span>
@@ -138,7 +139,7 @@ export default function FormulariosPage() {
               </CardContent>
             </Card>
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );

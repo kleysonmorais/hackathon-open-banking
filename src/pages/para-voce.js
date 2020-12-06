@@ -13,10 +13,10 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-export default function DuvidasPage() {
+export default function ParaVocePage() {
   return (
     <>
-      <DynamicAppTabNavigationWithNoSSR title="Transações" />
+      <DynamicAppTabNavigationWithNoSSR title="Para você" return="/principal" />
 
       <div className="container mx-auto my-4">
         {/* <h2 className="text-xl font-medium mx-2">Categorias populares</h2>

@@ -6,11 +6,11 @@ const DynamicAppTabNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-export default function MinhasDepesasPage() {
+export default function MeusInvestimentosPage() {
   return (
     <>
       <DynamicAppTabNavigationWithNoSSR
-        title="Perfil do Investidor"
+        title="Meus investimentos"
         return="/principal"
       />
 

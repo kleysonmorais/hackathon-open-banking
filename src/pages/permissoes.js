@@ -9,7 +9,7 @@ const DynamicAppTabNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-export default function GestaoConsentimentoPage() {
+export default function PermissoesPage() {
   const [providers, setProviders] = useState([]);
   const [integrated, setIntegrated] = useState([]);
 
@@ -50,20 +50,20 @@ export default function GestaoConsentimentoPage() {
   return (
     <>
       <DynamicAppTabNavigationWithNoSSR
-        title="Gestão de Consentimento"
+        title="Permissões"
         return="/principal"
       />
       <div className="flex flex-col mb-4 mt-2">
-        <button
+        {/* <button
           type="button"
           className="place-self-center my-5 bg-white font-bold py-2 px-4 rounded w-3/4"
           style={{ color: '#B02334' }}
           onClick={() => handleNovoBanco()}
         >
           Novo Banco
-        </button>
+        </button> */}
 
-        {integrated.map((element) => (
+        {/* {integrated.map((element) => (
           <div key={element.id} className="rounded bg-white m-2 px-4 py-6">
             <p className="text-xs text-green-800">Conta Bancária</p>
             <div className="flex justify-start pt-2">
@@ -81,7 +81,11 @@ export default function GestaoConsentimentoPage() {
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
+
+        <img src="imgs/perm-3.svg" className="py-4 px-24 w-full" alt="foto" />
+        <img src="imgs/perm-1.svg" className="py-4 px-8 w-full" alt="foto" />
+        <img src="imgs/perm-2.svg" className="py-4 px-8 w-full" alt="foto" />
       </div>
     </>
   );

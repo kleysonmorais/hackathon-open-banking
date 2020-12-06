@@ -16,7 +16,10 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
 export default function DuvidasPage() {
   return (
     <>
-      <DynamicAppTabNavigationWithNoSSR title="Planejamento" />
+      <DynamicAppTabNavigationWithNoSSR
+        title="Poupe seu dinheiro"
+        return="/principal"
+      />
 
       <div className="container mx-auto my-4">
         {/* <h2 className="text-xl font-medium mx-2">Categorias populares</h2>

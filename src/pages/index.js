@@ -11,7 +11,7 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('felipereis@gmail.com');
   const [senha, setSenha] = useState('');
 
   const logar = () => {
