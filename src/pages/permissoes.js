@@ -63,29 +63,35 @@ export default function PermissoesPage() {
           Novo Banco
         </button> */}
 
-        {/* {integrated.map((element) => (
-          <div key={element.id} className="rounded bg-white m-2 px-4 py-6">
-            <p className="text-xs text-green-800">Conta Bancária</p>
-            <div className="flex justify-start pt-2">
-              <img
-                width={100}
-                style={{ borderRadius: 5 }}
-                src={element.logo}
-                alt="nubank"
-              />
-              <div className="px-4">
-                <p className="font-sm text-base font-bold">{element.name}</p>
-                <span className="font-sans text-base font-semibold text-green-800">
-                  R$ 1.254,32
-                </span>
-              </div>
-            </div>
-          </div>
-        ))} */}
-
         <img src="imgs/perm-3.svg" className="py-4 px-24 w-full" alt="foto" />
-        <img src="imgs/perm-1.svg" className="py-4 px-8 w-full" alt="foto" />
-        <img src="imgs/perm-2.svg" className="py-4 px-8 w-full" alt="foto" />
+
+        {integrated.map((element) => (
+          // <div key={element.id} className="rounded bg-white m-2 px-4 py-6">
+          //   <p className="text-xs text-green-800">Conta Bancária</p>
+          //   <div className="flex justify-start pt-2">
+          //     <img
+          //       width={100}
+          //       style={{ borderRadius: 5 }}
+          //       src={element.logo}
+          //       alt="nubank"
+          //     />
+          //     <div className="px-4">
+          //       <p className="font-sm text-base font-bold">{element.name}</p>
+          //       <span className="font-sans text-base font-semibold text-green-800">
+          //         R$ 1.254,32
+          //       </span>
+          //     </div>
+          //   </div>
+          // </div>
+          <img
+            key={element.id}
+            src="imgs/perm-1.svg"
+            className="py-4 px-8 w-full"
+            alt="foto"
+          />
+        ))}
+
+        {/* <img src="imgs/perm-2.svg" className="py-4 px-8 w-full" alt="foto" /> */}
       </div>
     </>
   );

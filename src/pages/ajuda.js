@@ -11,9 +11,7 @@ export default function AjudaPage() {
     <>
       <DynamicAppTabNavigationWithNoSSR title="Ajuda" return="/principal" />
 
-      {/* <img src="../imgs/foto1.png" alt="foto" />
-      <img src="../imgs/foto2-2.png" alt="foto" />
-      <DynamicLabelBottomNavigationWithNoSSR selected="busca" /> */}
+      <img src="imgs/ajuda.svg" className="py-4 px-8 w-full" alt="foto" />
     </>
   );
 }

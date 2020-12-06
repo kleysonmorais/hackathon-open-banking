@@ -14,9 +14,7 @@ export default function MeusInvestimentosPage() {
         return="/principal"
       />
 
-      {/* <img src="../imgs/foto1.png" alt="foto" />
-      <img src="../imgs/foto2-2.png" alt="foto" />
-      <DynamicLabelBottomNavigationWithNoSSR selected="busca" /> */}
+      <img src="imgs/invest-1.svg" className="py-4 px-8 w-full" alt="foto" />
     </>
   );
 }
