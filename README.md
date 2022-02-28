@@ -1,30 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+ <img width="30%" alt="logo-meu-gerente" src="https://user-images.githubusercontent.com/17303936/156031081-2cd46caf-b78f-4940-a41d-4bfbe08c3bc3.png">
+</p>
 
-## Getting Started
 
-First, run the development server:
+Meu Gerente: Mudar a experiência de poupar do brasileiro, utilizando o open banking, monitoramos em tempo real, receitas e despesas. Cruzando esses dados com informações do mercado financeiro, construímos uma carteira de recomendações de ativos altamente personalizada para o cliente atingir seus objetivos ou, escolher o plano que nos transfere a responsabilidade de realizar os melhores investimentos, por ele com os dados liberados para acesso, realizamos uma análise inteligente e sofisticada do perfil do investidor. Utilizando de algoritmos de aprendizagem de máquina, conseguimos ter muito mais precisão em quantificar o nível de aversão ao risco.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![image](https://user-images.githubusercontent.com/17303936/156031174-389e76d4-207c-43cf-ba30-8bc2a6dd6723.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Desafio
+[Hacka Lina & Banfico: Open Banking](https://youtu.be/Ak0L5GwQowU). A complexidade das escolhas de investimento gera medo de investir, inadimplência e impacta na vida das pessoas:
 
-## Learn More
+# Participantes
+[Fabiane Zambon](https://www.linkedin.com/in/fabiane-zambon-1b993218a//)
 
-To learn more about Next.js, take a look at the following resources:
+[Felipe Reis](https://www.linkedin.com/in/felipereismb/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Kleyson Morais](https://www.linkedin.com/in/kleysonmorais/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[William Moreira](https://www.linkedin.com/in/william-moreira-96791b158/)
 
-## Deploy on Vercel
+# Links
+[Vídeo Pitch](https://youtu.be/aXd4aVu4P1E)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[Vídeo Demo](https://youtu.be/Ukug50_3Joo)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Scripts
+Este projeto foi feito com [Next.js](https://nextjs.org/) inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### `yarn install`
+
+Instala todas as dependências necessárias para execurar o projeto.
+
+### `yarn dev ou npm run dev`
+
+Executa o projeto em modo de desenvolvimento
+Abra [http://localhost:3000](http://localhost:3000) para ver a execução no browser.
